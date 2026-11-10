@@ -40,6 +40,12 @@ class ExportSafety(unittest.TestCase):
         properties = (ROOT / 'gradle/wrapper/gradle-wrapper.properties').read_text()
         self.assertIn('distributionSha256Sum=f397b287023acdba1e9f6fc5ea72d22dd63669d59ed4a289a29b1a76eee151c6', properties)
 
+    def test_ci_uses_existing_sdk_without_automatic_license_acceptance(self):
+        workflow = (ROOT / '.github/workflows/android.yml').read_text()
+        self.assertNotIn('android-actions/setup-android@', workflow)
+        self.assertIn('platforms/android-35', workflow)
+        self.assertIn('android.builder.sdkDownload=false', workflow)
+
 
 if __name__ == '__main__':
     unittest.main()

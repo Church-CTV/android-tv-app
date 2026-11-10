@@ -8,7 +8,7 @@
   "files": [
     {
       "path": ".github/workflows/android.yml",
-      "sha256": "f639809eb0e9b6e00879dd63576ecfc1c043c1b22f6be53a5b3a111f8b697dbe"
+      "sha256": "021298861b3fe44a5f8371bfba8982b3a2c6fcabfe61f8088822fd69aaafe1e9"
     },
     {
       "path": ".github/workflows/source-hygiene.yml",
@@ -735,12 +735,8 @@
       "sha256": "9d4249c2c1e8ce2a48c2ecb401aa010320800d1655717b13833a7c82fd0e9601"
     },
     {
-      "path": "tests/__pycache__/test_export_safety.cpython-313.pyc",
-      "sha256": "c8613ac6c9b7f927c2cb459387849a1ced299dc0980732c817458af7b57a1354"
-    },
-    {
       "path": "tests/test_export_safety.py",
-      "sha256": "39a74bdfcef7378e2dc4ff7317aa4476b4c5701042d215f7f65d4a84a481bda0"
+      "sha256": "02a7d5929bc82738c06d2607a5ab7ada6fd0a04035194981ecec40aab0b52597"
     }
   ]
 }

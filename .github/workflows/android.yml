@@ -16,6 +16,7 @@ jobs:
           distribution: temurin
           java-version: '21'
       - uses: gradle/actions/wrapper-validation@ed408507eac070d1f99cc633dbcf757c94c7933a
-      - uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407
-      - run: ./gradlew testDebugUnitTest assembleDebug
+      - name: Verify preinstalled Android SDK
+        run: test -d "${ANDROID_HOME:?}/platforms/android-35"
+      - run: ./gradlew -Pandroid.builder.sdkDownload=false testDebugUnitTest assembleDebug
       - run: python3 -m unittest discover -s tests -v
