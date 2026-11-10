@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- TV theme — dark background, matches Roku design -->
+    <style name="Theme.FireTV" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:colorBackground">@color/brand_background</item>
+        <item name="android:windowBackground">@color/brand_background</item>
+        <item name="colorPrimary">@color/brand_accent</item>
+        <item name="colorOnPrimary">@color/brand_text_primary</item>
+        <item name="colorSurface">@color/brand_surface</item>
+        <item name="colorOnSurface">@color/brand_text_primary</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

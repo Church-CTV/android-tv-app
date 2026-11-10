@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Android Lint configuration for app/lint-xml-config.xml.
+
+  Two categories of override:
+
+  1. Media3 UnstableApi: globally opted-in via compiler args in build.gradle.kts.
+  2. Rules that flag intentional, TV-specific design decisions that we have
+     explicitly accepted. Each is documented with a reason comment.
+
+  Do NOT suppress rules here without a concrete rationale — use lint.xml at
+  repo root (config/lint/lint.xml) for project-wide policy.
+-->
+<lint>
+    <!-- Media3 UnstableApi is globally opted-in via compiler args in build.gradle.kts -->
+    <issue id="UnsafeOptInUsageError">
+        <ignore regexp="VideoPlayerScreen\.kt" />
+    </issue>
+
+    <!--
+      TV app: landscape is a design requirement, not a bug.
+      Mirrors Roku's VideoScreen landscape lock.
+      DiscouragedApi for screenOrientation is accepted here.
+    -->
+    <issue id="DiscouragedApi" severity="ignore" />
+
+    <!--
+      Adaptive icon monochrome (API 33+): not required for TV launcher display;
+      our adaptive icons are the sole icons used.
+    -->
+    <issue id="MonochromeLauncherIcon" severity="ignore" />
+
+    <!--
+      TV app: dispatchKeyEvent override in MainActivity is intentional.
+      Fire TV remote key handling requires intercepting at the Activity level
+      to route hardware keys (voice/search/channel) to the RemoteKeyEventBus.
+      The RestrictedApi flag on super.dispatchKeyEvent is accepted here.
+    -->
+    <issue id="RestrictedApi" severity="ignore" />
+
+    <!--
+      "A newer version of X is available" advisories.
+      Our dependency versions are intentionally pinned for:
+        - Android TV / Leanback stability
+        - Compose BOM 2024.12.01 (Leanback 1.0.0 compatibility window)
+        - kotlinx-coroutines-test 1.6.4 (StandardTestDispatcher behavior)
+      See the resolutionStrategy block in app/build.gradle.kts for details.
+      We upgrade in a coordinated way, not per-lint-pass.
+    -->
+    <issue id="GradleDependency" severity="ignore" />
+    <issue id="AndroidGradlePluginVersion" severity="ignore" />
+</lint>

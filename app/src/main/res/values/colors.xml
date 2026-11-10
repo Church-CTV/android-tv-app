@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors — matched to app_config.json and BrandColors.kt (dark navy/gold theme) -->
+    <color name="brand_background">#1A1A2E</color>
+    <color name="brand_surface">#16213E</color>
+    <color name="brand_accent">#E8B931</color>
+    <color name="brand_text_primary">#FFFFFF</color>
+
+    <!-- App icon background (for TV banner + adaptive icons) -->
+    <color name="app_icon_background">#1A1A2E</color>
+</resources>

@@ -1,0 +1,746 @@
+{
+  "formatVersion": 1,
+  "platform": "android-tv",
+  "sourceRevision": "fc91589b1a0078cc7b04f814ca8b5942ceb2ef23",
+  "releaseStatus": "private-review-candidate",
+  "licenseStatus": "review-required",
+  "selfExcluded": true,
+  "files": [
+    {
+      "path": ".github/workflows/android.yml",
+      "sha256": "f639809eb0e9b6e00879dd63576ecfc1c043c1b22f6be53a5b3a111f8b697dbe"
+    },
+    {
+      "path": ".github/workflows/source-hygiene.yml",
+      "sha256": "92e9bd0f85a40c242d7398fbf7b43a7d30c5b911c64af1545357907fd086d1be"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "2ed66023db0f52bac090d1e611537e71e51d0137327818b23e2cc59b5d9a1486"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "30dc8276e2fa9163cf49d04aad1488b33bced552273457a3b31142547c3b0b7a"
+    },
+    {
+      "path": "CONTRIBUTOR-AGREEMENT.draft.md",
+      "sha256": "b5660c88d208c800604179b1db78a24d8f68567200834c2bcb156b44ff892fdd"
+    },
+    {
+      "path": "DEPENDENCY-LICENSE-INVENTORY.json",
+      "sha256": "cc4d4ba5d2b68e357d189c395311da2eede4874a59807a11e88e0c6864b67b07"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "e95ced89520be08c953d853c1ac75842aa21ad181c1acf063f2fef2843c1f981"
+    },
+    {
+      "path": "LICENSE.draft.md",
+      "sha256": "60e494c2ad13707a87f865bdabfbe9fc61fd31d887ddf96b339765e4ff155d8a"
+    },
+    {
+      "path": "LICENSING-STATUS.md",
+      "sha256": "a4f6ca0419498d5dc24168eb442a2aa820b38a705d5bb7674ec1d9574a67c9e7"
+    },
+    {
+      "path": "README.md",
+      "sha256": "59c4a7db90ef756ac0e12e9e050574c1daee8d0f01ecc80c8c8047911153581b"
+    },
+    {
+      "path": "RELEASE-STATUS.md",
+      "sha256": "29f9a009776e1457bc7eb159495db5390f42bf8416556230dc7cc81800094b3c"
+    },
+    {
+      "path": "RUNTIME-CONFIGURATION.md",
+      "sha256": "6d7e48d5c1cc532764d2670252022b093cf08847ea9b25dd31afe0bcbbd03575"
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "9e7ba5bae1b572990160c8f1f9c295d466e83288f209288eb7e18d766757ccf3"
+    },
+    {
+      "path": "app/build.gradle.kts",
+      "sha256": "fdd794801414616947962a8951a2803f67c963350d9a6dd2a9e07e6888fadf64"
+    },
+    {
+      "path": "app/lint-xml-config.xml",
+      "sha256": "8d47b61894f11e4829c1eec6c93691c92505340af9d57e35a8018d682cf1460d"
+    },
+    {
+      "path": "app/proguard-rules.pro",
+      "sha256": "a98f1f01a098eea28b89d05f2923ca4554e23707223d8798e6267b8f2bb4f9b9"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/BaseE2ETest.kt",
+      "sha256": "773cced0896a6ec8a78e3f7e33792421163d3a2371e4216311d1688ea97a796d"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/MainActivityTestRule.kt",
+      "sha256": "a7f3425a23513f60812cffd41355cc13d41a389a69455a832878ce69f59fd688"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/ContinueWatchingE2ETest.kt",
+      "sha256": "4c89a21f7e34ced5b9f6787dfbacd5bf9cd1e26ee134af1a6b03096a8ac5509d"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/DeepLinkE2ETest.kt",
+      "sha256": "f1a467661cfbd2de9313f8b00764c84f30734f2a301f22c5f6708fbddca93111"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/FeedScreenE2ETest.kt",
+      "sha256": "2844edc24396fd8050940688278ad7ba2eba0e2ba9b04eb67c4e7e70d114ee52"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/FocusManagementE2ETest.kt",
+      "sha256": "7a6f88bfb9cc2c92922d182133fb8736c22331287cd7027ff5224cce78c49eaf"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/MainActivityE2ETest.kt",
+      "sha256": "ff41b329fc596d70d67bbb398d0640216b71bec7abd9660c8cfd8e9d8f3bf8c5"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/NavigationE2ETest.kt",
+      "sha256": "4e4b7b2224ea4a57cc745dc1dc88fd680b706150cdcae005d043a3e66239dc0c"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/NavigationFlowE2ETest.kt",
+      "sha256": "796ddd3f2964d6a4ad4a70a5982c77e20829004b7edea6e362cd81c46be541e2"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/SearchE2ETest.kt",
+      "sha256": "cf15fc43ce51a24d83d8b08d8fb2d43d1dc58e059256eb324a264c230a048948"
+    },
+    {
+      "path": "app/src/androidTest/java/com/dominickp/firetvandroidtv/e2e/SettingsE2ETest.kt",
+      "sha256": "2617b4587210987b52832449038625a2b0ebc51afef423cf8f7d078297810ccd"
+    },
+    {
+      "path": "app/src/main/AndroidManifest.xml",
+      "sha256": "ffd1bd4a16a43c88928b526e9026dd4edf02bf748f347a22ca9af35a12e7031a"
+    },
+    {
+      "path": "app/src/main/assets/app_config.json",
+      "sha256": "a535f51cdc40c4c15c59f1ada7d9314be48f17f8e63498a65c37d0c697fbef5b"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/FireTVApplication.kt",
+      "sha256": "81c711682ee40e39ffb1a64f390090d2694eb8ef9bfe4a985c89f712b88096a8"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTracker.kt",
+      "sha256": "be5523dfd36e00798d410280b2a6ee715430c9f078839bbe7f9e0e1d7bec5808"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/config/ColorUtils.kt",
+      "sha256": "bf1e21b6e9a6d3ae36b5e220bbd7a739fd86819ac852d83265da51651790071c"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/config/Config.kt",
+      "sha256": "026c10dbf1df2e915546420e878e5df6e856a2b7160e86924a1e516b8bf0a18d"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/config/ConfigLoader.kt",
+      "sha256": "f99005ace9cef94987c03771643c241ba7355195a193f52c64bac07b705a9610"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/config/PageType.kt",
+      "sha256": "6d7ea927e532739ab830f83bfcead7220d972ee9e6c1c9f5339f21f9e8a85771"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/config/RawFeedResponse.kt",
+      "sha256": "4596c2a4e39f1ea0db4c6cdf6d73a30150ae0d5400c90998b09f3ad84742d854"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/dao/ContinueWatchingDao.kt",
+      "sha256": "0e552909e05e4e603569d73c8221c457d897d700f16d4281e60c2a866921547b"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/data/local/SettingsPreferences.kt",
+      "sha256": "78b6d57b0f21cbb30281d670dec1dbb6a55686dc7619947c04c35f820f579d56"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/data/model/VideoItem.kt",
+      "sha256": "9bea7f106828a1ef46e95b9f5f058eb9b25fabbc6739a5a3cee1e467149448a7"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/data/network/FeedRepository.kt",
+      "sha256": "b4d552227a4c09a3018704f8099b03d97e68e953e851ab5d55770a9a64db9f23"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/data/network/SearchApi.kt",
+      "sha256": "4167f4b96dc189239ea46929cb8de3b80165168a34804ba76d87bb0128840517"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/data/repository/PlayerRepository.kt",
+      "sha256": "a8cc3a91c8a0e37ebeb8d53f7484efaf1cb9649dfd3d90c913d4c68ce788ef08"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/db/FireTVDatabase.kt",
+      "sha256": "bc5ad3f023cf2065bf7b63f5e562755c743933b5b02878a35e3bd5377e93a70c"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/FeedViewModel.kt",
+      "sha256": "bd928fd3fb9ea7d3306b80594fad642e0cae39b705622e40dc90d682169f82bc"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/LayoutConstants.kt",
+      "sha256": "f58196180cbec9984b2594a0f22a0f4d7fda84462dddf8bd53c994020e2ac444"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/MainActivity.kt",
+      "sha256": "210be81a4def24e4cdda222ddc3a2ff252794777324dbd976e45d62a9fb0d219"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/accessibility/AccessibilityUtils.kt",
+      "sha256": "b7f5b5df5b390887149fbbc53bb8fc0e9900a5db40575d0dba8a76858830a299"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/components/ContentCard.kt",
+      "sha256": "95867c1356d76d13beed72b37f16356aada5a4d697a5e813a548aa24dd47963a"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/components/FocusedInfoBar.kt",
+      "sha256": "560838eb7a91d7b0dbffb1832fba0f76f54399c7e951180d6afaf52eb29cdd06"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/components/MonthGroupedRows.kt",
+      "sha256": "bb7dcad9d0172fa3979b82f394335b2eac92cf472723e07f27e137c0eb50cbb8"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/components/OverhangHeader.kt",
+      "sha256": "e69844cbef1b9403a897832d4074fe3ee5e73697dd69a3c12a002121781e41f2"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingScreen.kt",
+      "sha256": "57ef60f917e15096bd22462e6701c5299bcfd8fa339f712299c310800606a707"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingViewModel.kt",
+      "sha256": "f1037faef873bfcb0d73c1af9eed885bea448bf9514e97d863c3773a332fb171"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/focus/FocusManager.kt",
+      "sha256": "2e7c5a4b0454e3e9853975b1e6ee77abf6f5b406892465e98f35529f4bd76cf3"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/focus/GridFocusController.kt",
+      "sha256": "ba38a86be4b60d0ffa6d2b491678befb0eb464cc2c454338466c31eeb2ce8782"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/grid/GridScreen.kt",
+      "sha256": "50547b2e7d73a5f0555191ee17f6d74427d31d19a8c2b0eaac8398ca387c0d01"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/leftnav/LeftNavScreen.kt",
+      "sha256": "8906140f5d321262cb908322199fc209f29d52651cb6311988bc50b9c7817274"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/navigation/AppNavigation.kt",
+      "sha256": "770af1414dd1d0bdf8c1f22efc166826b5f357e748392d73702729a94226e000"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/navigation/ErrorScreen.kt",
+      "sha256": "541e1169bc67f6670613f1d558bc1359ebc82c876e67ccfec7711e09a928eaad"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/navigation/NavBridge.kt",
+      "sha256": "4f3bcaece9d98897ccd280619dc9ae2c09eced795b1b3cd0228435cc0ff5aebf"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/navigation/RemoteKeyHandler.kt",
+      "sha256": "a44901b0731a058a590b00d5cd7b885d1017d2691a9e594ec6067347ff665c3a"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/player/PlayerViewModel.kt",
+      "sha256": "587f0a18d9026677d40847023f9b7b63ef5904d9a3eeb54381e838fb7eea1ce4"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/player/VideoPlayerScreen.kt",
+      "sha256": "4a60753d17338d79d3e877be50f47914defefee249132298ff28adfb1cc63500"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/search/SearchScreen.kt",
+      "sha256": "d64e8546347c8423132c7b1f378dbf4cc4aa9f4878266bb596db48f5442c166e"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/search/SearchState.kt",
+      "sha256": "da9b066d375dadfabec6ecc18512602b8c845945d6ae088f67d96f4b4492d517"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/search/SearchViewModel.kt",
+      "sha256": "28807d5be5b1bdb06e6becd8ed251f32956c25c3dee700a2425b29577066f2a7"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/search/TVKeyboard.kt",
+      "sha256": "626e1726c72b395c19bfe7ab9793a4b97de41b4a467859b7dc6bb861160731a1"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/settings/SettingsLayout.kt",
+      "sha256": "5126a750d0fa3f735df4a438bdd2c109ff73fdc536beffab8ce8f1a2397c3479"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/settings/SettingsScreen.kt",
+      "sha256": "e4f187d6eec39baa683f94c96ac9acc47a1e85d16995a4a49a30506a374f1087"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/settings/SettingsViewModel.kt",
+      "sha256": "6b2b8c3fb85a6c801fa9d4cd158dd9cba477270e9d11f67212f73bda1bdadd4f"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/splash/SplashScreen.kt",
+      "sha256": "c9f75b65cd1dd164f3746f876e6705051f2c6796b277beaeadc347ec21ac0fc8"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/subscriptions/SubscriptionScreen.kt",
+      "sha256": "631916434a0439305219975f11932edbf267ef0ff258b08583aabf4d37416d0d"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/subscriptions/SubscriptionViewModel.kt",
+      "sha256": "3ca8383806ec6e4a1aa1e7692215373b284120520baa9a035ec0f70950862ec1"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/theme/BrandColors.kt",
+      "sha256": "730ad1d75f5b04805053e7d62685b48beec322dd4cfe5c3061d2534a9076f59c"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/theme/Theme.kt",
+      "sha256": "759186e66afb34dfb6e8cf6e9ac59124ea1ae55314fe75cea7a03d645de92143"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/ui/theme/Type.kt",
+      "sha256": "4611013a5c30600bae01d972cb74e0cfa7c96f9ae51f72330e5fea02bb9a968b"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/util/CrashReportingService.kt",
+      "sha256": "d286819abd5e7cf410dbf5bd1311ba7bcd5df3317eb1593265c189610ba05441"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/util/DeviceUtils.kt",
+      "sha256": "5513a507174c93089d176eedeff8d0ef61e6c06cfa4ab73b74746a85cc73b9e3"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/util/HeartbeatService.kt",
+      "sha256": "b59cb4a16ab5ff995a98b3af2f053cfdabbd2623b4f72e10e168e858a466ca91"
+    },
+    {
+      "path": "app/src/main/java/com/dominickp/firetvandroidtv/util/Logger.kt",
+      "sha256": "b1fa80dc0d2619619bae8290c5662db1225485a2bf791ffba0f73edd8469826d"
+    },
+    {
+      "path": "app/src/main/res/drawable/app_icon_background.xml",
+      "sha256": "f0f9ce162feb719b65bff61d3744f83d0e1292b53ba474670ff57a21b3659065"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_foreground.xml",
+      "sha256": "29241b26f23e72cb1b5c7b68dff1bf203befd2878cbaf8dd9d7007b86dff1dfe"
+    },
+    {
+      "path": "app/src/main/res/drawable/ic_launcher_tv.xml",
+      "sha256": "92797cb1133c0e0eeb6a0b6e0e189d7aabe05dc337bcf56e0a21597216d56c8f"
+    },
+    {
+      "path": "app/src/main/res/layout/media3_player.xml",
+      "sha256": "99e496a87b3690c04265757bb91244a864286e07657f8b1823ab8aad15f54692"
+    },
+    {
+      "path": "app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml",
+      "sha256": "43ce7a0217cfce45e9c8d9e483f32f48d8a41fd34e0601664a347c2bf25685d4"
+    },
+    {
+      "path": "app/src/main/res/values/colors.xml",
+      "sha256": "19ae2feda4f0d5a1fbd71bf9ab23e1e7c00b1e9a2d78c17475485519d58c9773"
+    },
+    {
+      "path": "app/src/main/res/values/strings.xml",
+      "sha256": "6e29919cfb799da5984bf0deb28e6a7a9fbe2fa0a9ceac0b7c82f95b60c898f5"
+    },
+    {
+      "path": "app/src/main/res/values/themes.xml",
+      "sha256": "bbbc3317aa170ea45d5215aaee945f479ddc9d9e97d620a38f8b5cfa231633bb"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/FireTVApplicationLifecycleTest.kt",
+      "sha256": "a571691246367114124d3eebb1ba46591616b462a1200320fdda6fb761b835cf"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/FireTVApplicationTest.kt",
+      "sha256": "c61b2725c9e288653bc4beba9cde44602a28dfd405c6f23ff1153d090c3f503a"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerConcurrentDedupTest.kt",
+      "sha256": "c77c97d2fba406220dcce9f48283818da5f3177b58173d5c771f7e0414867a60"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerDedupTest.kt",
+      "sha256": "e1f2d6329907775e5d14e3053d7caf5890789f57fb4ab670986411df069a04fe"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerDeserializationTest.kt",
+      "sha256": "def44765524cee1f71bf4e755addf5c84f350f6a9d96afffcaeed8f0de65eba6"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerDestroyDuplicateTest.kt",
+      "sha256": "f4b75c09144af76f9c6e4e5521ab835de8be1131765d235cd6416ed80bb5ca4b"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerExecutorReuseTest.kt",
+      "sha256": "801179cd6898bdce86cf49899b1ae8fb8481f5512d99ff97f9d7d02505829b4e"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerExportTest.kt",
+      "sha256": "0d2845d89dd3636d9fccc8a46440daa5b49ec09e7655f992a6dc288acf7f1cd4"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerFlushOnErrorBehaviorTest.kt",
+      "sha256": "bdfcd549584e091e3ee302c591c894de11d537f95a435a9371f6375541417aa9"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerFlushOnErrorTest.kt",
+      "sha256": "9a2ba5c580c142040b224af35fd0d501d5160923a2602b528274677d4423347b"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerJsonEscapingTest.kt",
+      "sha256": "290ac41bc066c4b4cf2e4398b7811da40a0830648e3fc93d0f1e461717dd1f03"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerPersistenceRoundTripTest.kt",
+      "sha256": "c7f783dcf2a3f6d8b2263cf8a1185544c85e75fe8d83f314d5bd720d5adf89bf"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerResetLeakTest.kt",
+      "sha256": "b6c256c640660d5628430a234cd7284a3802238f5e7d6df60ebc868d40c83a1d"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerRokuParityTest.kt",
+      "sha256": "33555651a01371385e551202cc0b1fdca560e16c4b434f03e8a8fab9a24c69a8"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/analytics/AnalyticsTrackerTest.kt",
+      "sha256": "c46051d72a08d52293febf0c8779995fb0d1fcd08a2ff4af1bae4a532192c4de"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/config/AnalyticsConfigTest.kt",
+      "sha256": "9803f9924f099aed2609c49b515ea194f453a8051e4c7470a7ff25706e001261"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/config/ColorUtilsTest.kt",
+      "sha256": "484f65903e7c8cdb4800f2cc1ff294aca9ab6ef7dbcdef6561d7aa9cd22675a6"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/config/ConfigLoaderFallbackTest.kt",
+      "sha256": "e33ae1aa7b15f8d6c5457fc6b57c3f22f333ca9eb10362d624e48b0a18e0f5de"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/config/PageTypeTest.kt",
+      "sha256": "4b852909d4493e40a909834e3a9e51b0a59b44f77d7809c7817c003ca1f1caa7"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/config/RawFeedResponseTest.kt",
+      "sha256": "fb618c1bde84dab00669cdc43bd5cf3511037f4f5e9fda78b6b66359a62740e0"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/contract/AppContractTest.kt",
+      "sha256": "6423e47369c4b7e326b32aaa88ea60e01fe092ae06856f5b363a8d65a39eaac3"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/contract/FeedContractTest.kt",
+      "sha256": "f8516789a88525092281cbd64756934731fd6122b9f678d165b70857b8553a25"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/contract/SearchContractTest.kt",
+      "sha256": "9b801f89c3e0fbd7410454e031360c85a6b982bbd2645fe7f49028bdfef3443f"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/contract/SettingsContractTest.kt",
+      "sha256": "da952ba8df1aecd2523ef58cea7d4f77cc3e3130c11c87caea577b3bff377c23"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/dao/ContinueWatchingDaoTest.kt",
+      "sha256": "ca5f3d189ad885dcd11d550fd78a9c34fe57a0734839832af7f57b5602c35a13"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/local/SettingsPreferencesTest.kt",
+      "sha256": "ff666c82ea27c89bede52979bed11aab4fdf4f9d89595db8de712734fd9f3c36"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/model/VideoItemTest.kt",
+      "sha256": "76f0a9ec7831266635ca9430c592bcbea1e16eafcc5108a3f416f2ccb3e9b0ec"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/network/FeedRepositoryDeadCodeTest.kt",
+      "sha256": "d6517cfa310277513e3717caeec26fea37ade1b57a045de50ecb34e13e3bfa4a"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/network/FeedRepositoryTest.kt",
+      "sha256": "ab134e49e65b11d6edc521f8e1ddd9f64142c52695fe94769733c8d26af6ee90"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/network/FeedRepositoryThreadSafetyTest.kt",
+      "sha256": "2ccb9002e89c221ca55e26e830d92e0987ac1cba975f1da2609ccdc654d2e8c9"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/network/SearchApiTest.kt",
+      "sha256": "809891c5c1bb9a83becdb76583e47ee5c26a673e224b542aa62dc1d59f6fb996"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/data/repository/PlayerRepositoryTest.kt",
+      "sha256": "26b01309677ae497ae229876b004ea8d756f56cc6de8a535cfad778c3b1e7487"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/db/FireTVDatabaseTest.kt",
+      "sha256": "9ec486d3288d1a1613ace2af3f054bd1a6ae1df9ef1d262c767131a3c9470f34"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/FeedViewModelAnalyticsTest.kt",
+      "sha256": "4842c7a91bbff178e55df13e951a8b7679a12057ad625193b5b45138b3f81d81"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/FeedViewModelDeepLinkTest.kt",
+      "sha256": "42e7b5f64999b5af9ec7d84119cd828c1ffbd57c598b47bd2028cb5cc892b73f"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/FeedViewModelStateTransitionTest.kt",
+      "sha256": "68d0202d44f98a7871d1b6c0434bb1cde8935c777abab5ca45924bd52b3adab7"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/FeedViewModelTest.kt",
+      "sha256": "08cb41f827db0d1a67cb7f15227aa3a9f20d7348b65699f7840cc231e7589c06"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/LayoutConstantsTest.kt",
+      "sha256": "9dd3334076deba9d006a9496642b075c4fac11df7b069e11b286cb59ac6b4e71"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/MainActivityTest.kt",
+      "sha256": "4b7aca3e44506e57a3f7168d0c73a523fc4b74bdb44ad97a0a0631996f209068"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/accessibility/AccessibilityUtilsTest.kt",
+      "sha256": "4eb9c65cbd5e28443b1de51db06a80d493374441f96c6e5aed6dadb29ffb127a"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/components/ContentCardTest.kt",
+      "sha256": "738fb83804353cdb2625d1b4bd0a7d814673c1449e9ad5da717e137ff0930e66"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/components/FocusedInfoBarTest.kt",
+      "sha256": "180f6608be8098b67e72af29f8a94e0f1356888e98b111e437a103624fed383c"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/components/MonthGroupedRowsTest.kt",
+      "sha256": "540556325a7f784dc9f257cd48d7221e0784f08121c0d2a6abf40609fc6d1dc3"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/components/MonthSorterTest.kt",
+      "sha256": "5b3a6d084b9e5742d4f93b31a61f5d669be7ea54f28a38f90bca283e6e99b59d"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/components/OverhangHeaderTest.kt",
+      "sha256": "8be169a01cee60de6249a8b60d86b0a51b472d1cd3d18df728b12a48d92a4f3e"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/components/ParseMonthKeyTest.kt",
+      "sha256": "c56e059c3f7e3e388e95457e73a86c239e5cea4a0d6b1060c22df77501e236b5"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingScreenOnBackTest.kt",
+      "sha256": "09b12e41e9d6758a500cc3532f202cf5288048ef29be981593e2125758f68cb4"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingScreenTest.kt",
+      "sha256": "e4869683efa5f9b72cbbe2d9a9ea3e1d42a4f2ea5e422a53122b517eafc2f2fd"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingViewModelDetailedTest.kt",
+      "sha256": "d00c7772b7b1c67126f5c593e8151b66ed0d320c2c7eec1b8f2de2988a5f0102"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingViewModelFullTest.kt",
+      "sha256": "9bb1160b5f495910e8e29a54fbd186e653c5a47b3467e5b010a8c010a48043cd"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/continuewatching/ContinueWatchingViewModelTest.kt",
+      "sha256": "78859b0872ce813f589b0bea34c548c546e7e93d4c7f8735060f4eb27d534f29"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/focus/FocusManagerNavigationCycleTest.kt",
+      "sha256": "180b4d37d827cbbb00ac9ec57f7e42d16bb71aaeac372e1493d292d0d8b8674e"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/focus/FocusManagerTest.kt",
+      "sha256": "2cf65b6bfba39328cadadf93915ab56010baea2892f9b6cae45c3a55ed83f288"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/focus/FocusManagerZoneIntegrationTest.kt",
+      "sha256": "5188f784956271801d12734da6054750decd855ec174ca0fb5d52b51e755eed6"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/focus/FocusZoneTest.kt",
+      "sha256": "c49f69a464144ab5ceacf4acff151fed33f0a837d450211d2b3c6b6c907b2ead"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/focus/GridFocusControllerTest.kt",
+      "sha256": "6922ef95098dc420ed0d85c616802bc0678690b7d7150869a0c83d663aedf1a8"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/navigation/ErrorScreenTest.kt",
+      "sha256": "82c8f4c04a6beb8e3899ddadf313d0d7aa8e72ab685e1da9ab44eeb5882f7a06"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/navigation/NavBridgeTest.kt",
+      "sha256": "2e87cb1fa68c793230f8c1c313a6c42711512c872e49658f0bce79214d8e9bc2"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/navigation/NavigationRouteTest.kt",
+      "sha256": "05874ef5e6fc53a51c44c9d1467c6cc2096708a61efa7a00999662fe146495cd"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/navigation/RemoteKeyHandlerTest.kt",
+      "sha256": "4765b0ca0a97ce24613f90b332283d2f222950ac01c40fc2355f379bce5c4c42"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/player/PlayerViewModelTest.kt",
+      "sha256": "8a8ceb90dfbfd9d1629981165cfaf84c1e3effeb7cbc2e1ca9bce4f4ed9a35d3"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/player/VideoPlayerScreenTest.kt",
+      "sha256": "45a8a473718c06d09f48b9a6a3a0ab16f27bd061f08948f03d367e122b56385b"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchScreenTest.kt",
+      "sha256": "e6399bf3e0a40d7c73d294b2ba2e09fc54447164b7ca5b39ae31260f8e736ff6"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchStateTest.kt",
+      "sha256": "3964b63badf0fd15b024a83084d7f7db59b4024a2ec9f21e81d4d4af9ca1ac3d"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchViewModelAnalyticsTest.kt",
+      "sha256": "1656ceacabe815f730d84a4c3b201251ff783cbe05bc0bea2c5b95f35ab6d486"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchViewModelFactoryTest.kt",
+      "sha256": "ca95797597614d53662ac08a37b2822f599edecbe85da5c3a79672ec7e9b5e1b"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchViewModelSearchTest.kt",
+      "sha256": "bbad265b296dd2834778f8d250fe817a99019c13132055a209ba7c879cd2b8e8"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchViewModelServerSearchTest.kt",
+      "sha256": "1738905946aa9e796f7908c8cf7a834200782cf5cb0dcf80ba0396561e1c2ff0"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/SearchViewModelTest.kt",
+      "sha256": "caaea16c70f790f5dc048431331ab23726da0a64dee38e0025c977a4c09b26c8"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/search/TVKeyboardTest.kt",
+      "sha256": "cd70936189a9cb67706def8ddb3e85cbc435dcd1d7c2c1f3e052b33b3b4b70d0"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/settings/SettingsLayoutAndFeaturesTest.kt",
+      "sha256": "8401e94b8f955b3dfc7d0a8aac0feb41618debcd1255560fc53ed26f6d451766"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/settings/SettingsLayoutTest.kt",
+      "sha256": "adb638d018bb3b97d9a994607b56d6ba308a7eb7c5ba0a00a9e21b221ab834d3"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/settings/SettingsScreenTest.kt",
+      "sha256": "fac2f47610876e7e997df8f8c5ba1c42f97e28182c040cd8869c3b9c84a0f39d"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/settings/SettingsViewModelTest.kt",
+      "sha256": "de10cac527058a7ce4c0ead4147d29a96c16b40d4519fa91b6c307cbff87830e"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/splash/SplashScreenTest.kt",
+      "sha256": "3bb08242c7f36d6a709694d1637e3b287d45ad8cb1578848bed53387997eb6d3"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/subscriptions/SubscriptionViewModelTest.kt",
+      "sha256": "cb9d7773c883af628c12d898cef30f543fb9ab7c44732cd98adcb3be5412a475"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/theme/BrandColorsTest.kt",
+      "sha256": "29e6580aedda108f38019133ba80b7fb9dfde85dd557e637f5c63d0bebef5347"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/theme/ThemeTest.kt",
+      "sha256": "61ee7c4c0d4f798d08129975e6871fc2ad5a9a310752137347a94f3999272e08"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/ui/theme/TypeTest.kt",
+      "sha256": "7c78e2f9769ad798202b9406dd6db43911f5434c86014508bfd4ec4e2459a520"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/CrashReportingServiceAsyncUploadTest.kt",
+      "sha256": "1c332a43b0369922ca086547c09ba00ccdfcbdb3ae7d46afab5b4d43a93d6763"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/CrashReportingServiceTest.kt",
+      "sha256": "59d05c1cf7d3041586ceffc4f65016e085d8623f354be31218f0168d16aa9b1b"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/DeviceUtilsTest.kt",
+      "sha256": "640a007fdf2511c65a0a6cf7b5958b616a0a1d97ad247e52939f9a16487d1879"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/HeartbeatServiceConnectionPoolLeakTest.kt",
+      "sha256": "4098c0822b96949e0fcd77b419362175d9510135d9d0e0d6826d47932373b27a"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/HeartbeatServiceResourceLeakTest.kt",
+      "sha256": "c4c4d0837c568fd09ab32c9a5ee08a7d584edd7579de422a3288aeeaa8d42fcf"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/HeartbeatServiceRestartTest.kt",
+      "sha256": "542cb50562c8e7570042faa60c9fbef6a7b702b1b3bdc22b088ab9be71aa741a"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/HeartbeatServiceTest.kt",
+      "sha256": "b44afaf620a3efa071bbfe4638cff057e814e8ceecbbe11c3ebc4b9eb86b8c2c"
+    },
+    {
+      "path": "app/src/test/java/com/dominickp/firetvandroidtv/util/LoggerTest.kt",
+      "sha256": "3936f83f4f61335f4753048fb4c16f215ed2c5740829fd83bdaa3e2d6202277c"
+    },
+    {
+      "path": "build.gradle.kts",
+      "sha256": "af57d1cf743b99ed0ae332df24c9ba447887dc123da7d944760f7a9e244da295"
+    },
+    {
+      "path": "gradle/libs.versions.toml",
+      "sha256": "5032c996d1b25435da709786ad354739a88a4361d5d342ed3ee335389a7e99e5"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.jar",
+      "sha256": "2db75c40782f5e8ba1fc278a5574bab070adccb2d21ca5a6e5ed840888448046"
+    },
+    {
+      "path": "gradle/wrapper/gradle-wrapper.properties",
+      "sha256": "1b9cd6961ee86eea17b2f912bddb22030492db23fc6dff07da6c30eccaaab0c4"
+    },
+    {
+      "path": "gradle.properties",
+      "sha256": "cfd15e00bdd0e8a93d8c5ce43f9eb6847b3f096e7b242042bf0507c0071e3e64"
+    },
+    {
+      "path": "gradlew",
+      "sha256": "aed122c30c62b3142d7842b917897bcc6d228c5dadb44a9849e2229a9996dfa1"
+    },
+    {
+      "path": "settings.gradle.kts",
+      "sha256": "9d4249c2c1e8ce2a48c2ecb401aa010320800d1655717b13833a7c82fd0e9601"
+    },
+    {
+      "path": "tests/__pycache__/test_export_safety.cpython-313.pyc",
+      "sha256": "c8613ac6c9b7f927c2cb459387849a1ced299dc0980732c817458af7b57a1354"
+    },
+    {
+      "path": "tests/test_export_safety.py",
+      "sha256": "39a74bdfcef7378e2dc4ff7317aa4476b4c5701042d215f7f65d4a84a481bda0"
+    }
+  ]
+}

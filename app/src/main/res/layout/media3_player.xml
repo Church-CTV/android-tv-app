@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  PlayerView hosted in Compose's AndroidView.
+
+  surface_type="texture_view" is REQUIRED here (this is the only XML-settable
+  surface option, PlayerView has no programmatic setSurfaceType):
+    * The default surface_view punches a separate window surface the WM composites
+      with its own timing. Inside Compose's AndroidView that surface desyncs from
+      the Compose surface, so the video renders BLACK until a key/touch event
+      forces a window re-composite (the "black until I press down" bug).
+    * Media3's setEnableComposeSurfaceSyncWorkaround(true) fixes the same class of
+      issue but only on API 34 (SurfaceSyncGroup is gated on Util.SDK_INT == 34 in
+      media3 1.6.0). Fire TVs commonly run API 28-30, where that call is a no-op.
+    * TextureView renders in-canvas (no separate surface) and works on EVERY API —
+      the robust, device-agnostic fix for Compose-embedded playback.
+-->
+<androidx.media3.ui.PlayerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/media3_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:surface_type="texture_view"
+    app:use_controller="true"
+    app:show_buffering="when_playing"
+    app:show_next_button="false"
+    app:show_previous_button="false" />
