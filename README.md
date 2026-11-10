@@ -1,5 +1,7 @@
 # Church CTV — Android TV and Fire TV application
 
+Permissions, commercial licensing, sales and support: see [SUPPORT.md](SUPPORT.md).
+
 Kotlin, Compose and Media3 application template, exported from source revision
 `fc91589b1a0078cc7b04f814ca8b5942ceb2ef23` without Git history. This is a
 sanitized starting point, not a production-ready release or a parity claim.
