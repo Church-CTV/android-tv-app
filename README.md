@@ -1,6 +1,6 @@
 # Church CTV — Android TV and Fire TV application
 
-Permissions, commercial licensing, sales and support: see [SUPPORT.md](SUPPORT.md).
+Questions about this software: [open an issue](issues) - anyone with a GitHub account may, no approval and no fee. Permissions, commercial licensing, sales and support: [SUPPORT.md](SUPPORT.md). License: Church CTV Community Source License 1.0 ([LICENSE](LICENSE)), and what it does not claim is in [LICENSING-STATUS.md](LICENSING-STATUS.md).
 
 Kotlin, Compose and Media3 application template, exported from source revision
 `fc91589b1a0078cc7b04f814ca8b5942ceb2ef23` without Git history. This is a
@@ -58,9 +58,13 @@ commit a populated properties file, or run release signing on untrusted PRs.
 Private agent instructions, operational records, customer profiles, signing
 material, packages, CI deployment automation and an unverified customer logo
 are omitted. Replace branding only with assets you have rights to use. No
-project license or third-party notice was present in the selected source;
-rights and redistribution authorization remain unresolved. Dependencies and
+license file was present in the selected source, so the project's own grant for
+first-party code is `LICENSE` (Church CTV Community Source License 1.0), and the
+resolved release-runtime licenses with POM and artifact hashes are recorded in
+`THIRD-PARTY-LICENSES.json`, `DEPENDENCY-LICENSE-INVENTORY.json` and
+`GRADLE-WRAPPER-LICENSE.txt`. Those are inventories, not legal clearance:
+whoever ships an APK or AAB owns the exact binary notices, source-offer duty and
+vendor SDK/OS terms for that build. Dependencies and
 versions are declared in `gradle/libs.versions.toml` and build files; review
 their licenses and provide required notices before redistribution. Gradle
-wrapper scripts and its jar are retained as upstream tooling. Parent export
-maintainers own common legal/security documents.
+wrapper scripts and its jar are retained as upstream tooling.
