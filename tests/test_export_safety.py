@@ -4,14 +4,31 @@ import unittest
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 
+# Customer identifiers must never reach a published build. The names themselves
+# live in tests/customer-denylist.txt, which is deliberately not committed: a
+# published tree that forbids customer names should not have to carry them. The
+# committed example shows the format, and the placeholder list below keeps the
+# check meaningful in a clean checkout.
+DENYLIST = ROOT / 'tests' / 'customer-denylist.txt'
+PLACEHOLDER_DENYLIST = ('church-name', 'customer-01')
+
+
+def denylist():
+    if DENYLIST.exists():
+        return [line.strip().lower() for line in DENYLIST.read_text().splitlines()
+                if line.strip() and not line.lstrip().startswith('#')]
+    return list(PLACEHOLDER_DENYLIST)
+
 
 class ExportSafety(unittest.TestCase):
     def test_customer_identifiers_removed(self):
+        tokens = denylist()
+        self.assertTrue(tokens, 'denylist must never be empty: an empty list passes by accident')
         for path in (ROOT / 'app').rglob('*'):
             if path.is_file() and path.suffix in {'.kt', '.kts', '.json', '.xml'}:
                 text = path.read_text().lower()
-                self.assertNotIn('nazarene', text, str(path))
-                self.assertNotIn('manteno', text, str(path))
+                for token in tokens:
+                    self.assertNotIn(token, text, f'{path} contains customer identifier')
 
     def test_defaults_are_inert(self):
         config = json.loads((ROOT / 'app/src/main/assets/app_config.json').read_text())

@@ -9,3 +9,6 @@ keystore.properties
 *.aab
 private-config/
 __pycache__/
+
+# customer identifiers stay out of the published tree
+tests/customer-denylist.txt

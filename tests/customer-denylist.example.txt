@@ -1,0 +1,7 @@
+# Customer identifiers this build must never bundle, one lowercase substring per line.
+# Copy to tests/customer-denylist.txt (not committed) and put the real names there:
+#   cp tests/customer-denylist.example.txt tests/customer-denylist.txt
+# A published copy of this repository keeps the check with placeholders only, so the
+# forbidden names themselves never appear in the public tree.
+church-name
+customer-01

@@ -33,7 +33,7 @@
     },
     {
       "path": ".gitignore",
-      "sha256": "2ed66023db0f52bac090d1e611537e71e51d0137327818b23e2cc59b5d9a1486"
+      "sha256": "d42accdd2e5f680ee9801bffae19f758076702415c785cfb8e8de141a944ca30"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -764,8 +764,12 @@
       "sha256": "9d4249c2c1e8ce2a48c2ecb401aa010320800d1655717b13833a7c82fd0e9601"
     },
     {
+      "path": "tests/customer-denylist.example.txt",
+      "sha256": "39c1176a3a753af529eb640654834ebd718f02ab2161f2aaee115bf5a833d310"
+    },
+    {
       "path": "tests/test_export_safety.py",
-      "sha256": "02a7d5929bc82738c06d2607a5ab7ada6fd0a04035194981ecec40aab0b52597"
+      "sha256": "bfb5175769c1c83527705065448de49730519c42ab1ada60c440ad823d819338"
     }
   ]
 }
